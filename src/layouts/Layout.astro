@@ -1,0 +1,150 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <style lang="scss" is:global>
+      ::selection {
+        background: #fce62e;
+        color: black;
+      }
+
+      .love {
+        display: inline-block;
+        position: relative;
+        top: 0.1em;
+        transform: scale(0.9);
+        animation: love 0.5s infinite linear alternate-reverse;
+      }
+
+      @keyframes love {
+        to {
+          transform: scale(1.1);
+        }
+      }
+
+      .book-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        perspective: 600px;
+        margin: 0 auto;
+      }
+
+      @keyframes initAnimation {
+        0% {
+          transform: rotateY(0deg);
+        }
+        100% {
+          transform: rotateY(-30deg);
+        }
+      }
+
+      .book {
+        width: 300px;
+        height: 480px;
+        position: relative;
+        transform-style: preserve-3d;
+        transform: rotateY(-30deg);
+        transition: 1s ease;
+        animation: 1s ease 0s 1 initAnimation;
+      }
+
+      .book:hover {
+        transform: rotateY(0deg);
+      }
+
+      .book > :first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: red;
+        width: 300px;
+        height: 480px;
+        transform: translateZ(25px);
+        background-color: #01060f;
+        border-radius: 0 2px 2px 0;
+        box-shadow: 5px 5px 20px #666;
+      }
+
+      .book::before {
+        position: absolute;
+        content: " ";
+        background-color: blue;
+        left: 0;
+        top: 3px;
+        width: 48px;
+        height: 476px;
+        transform: translateX(272px) rotateY(90deg);
+        background: linear-gradient(
+          90deg,
+          #fff 0%,
+          #f9f9f9 5%,
+          #fff 10%,
+          #f9f9f9 15%,
+          #fff 20%,
+          #f9f9f9 25%,
+          #fff 30%,
+          #f9f9f9 35%,
+          #fff 40%,
+          #f9f9f9 45%,
+          #fff 50%,
+          #f9f9f9 55%,
+          #fff 60%,
+          #f9f9f9 65%,
+          #fff 70%,
+          #f9f9f9 75%,
+          #fff 80%,
+          #f9f9f9 85%,
+          #fff 90%,
+          #f9f9f9 95%,
+          #fff 100%
+        );
+      }
+
+      .book::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: " ";
+        width: 300px;
+        height: 480px;
+        transform: translateZ(-25px);
+        background-color: #01060f;
+        border-radius: 0 2px 2px 0;
+        box-shadow: -10px 0 50px 10px #666;
+      }
+
+      .ribbon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 150px;
+        height: 30px;
+        margin-right: -40px;
+        margin-top: 20px;
+        padding-top: 5px;
+        transform: rotate(45deg); /* Standard syntax */
+      }
+
+      .underline {
+        background: linear-gradient(to top, #fce62e 35%, transparent 35%);
+        text-decoration: none;
+      }
+    </style>
+  </body>
+</html>

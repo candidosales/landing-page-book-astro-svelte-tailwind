@@ -1,0 +1,22 @@
+{
+  "name": "@example/basics",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@tailwindcss/ui": "^0.7.2",
+    "astro": "^1.1.5"
+  },
+  "devDependencies": {
+    "@astrojs/svelte": "^1.0.0",
+    "@astrojs/tailwind": "^1.0.0",
+    "sass": "^1.54.8",
+    "svelte": "^3.50.0"
+  }
+}
