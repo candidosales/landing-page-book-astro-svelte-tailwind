@@ -4,6 +4,8 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+import "@fontsource/pt-serif";
+import config from "../config.json";
 ---
 
 <!DOCTYPE html>
@@ -18,8 +20,10 @@ const { title } = Astro.props;
   <body>
     <slot />
     <style lang="scss" is:global>
+      $book-theme-color: #b3b3b3;
+
       ::selection {
-        background: #fce62e;
+        background: $book-theme-color;
         color: black;
       }
 
@@ -142,7 +146,11 @@ const { title } = Astro.props;
       }
 
       .underline {
-        background: linear-gradient(to top, #fce62e 35%, transparent 35%);
+        background: linear-gradient(
+          to top,
+          $book-theme-color 35%,
+          transparent 35%
+        );
         text-decoration: none;
       }
     </style>

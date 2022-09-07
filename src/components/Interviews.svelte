@@ -38,7 +38,7 @@
 <div class="bg-white">
   <div class="max-w-screen-xl mx-auto pt-16 pb-4 px-4">
     <h2 class="text-3xl leading-9 font-extrabold text-gray-900">
-      Featuring Interviews with...
+      Incluindo Entrevistas com...
     </h2>
     <div class="mt-6 pt-10">
       {#each interviews as { name, imageUrl, company, summary, location, githubUrl, twitterUrl, linkedinUrl }}
@@ -53,10 +53,10 @@
                 target="_blank">{company.name}</a
               >
             </p>
-            <p class="text-base text-gray-600 mb-1">
+            <p class="text-base text-gray-600 mb-1 font-body">
               {summary}
             </p>
-            <p class="text-sm italic text-gray-500">{location}</p>
+            <p class="text-sm italic text-gray-500  font-body">{location}</p>
             <div class="flex flex-row my-2">
               <a href={githubUrl} target="_blank"><Github /> </a>
               <a href={twitterUrl} target="_blank"><Twitter /></a>
