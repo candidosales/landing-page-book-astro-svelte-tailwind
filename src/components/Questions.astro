@@ -1,3 +1,7 @@
+---
+import config from "../config.json";
+---
+
 <div class="bg-white">
   <div class="max-w-screen-xl mx-auto px-4 pb-16">
     <h2 class="text-3xl leading-9 font-extrabold text-gray-900">
@@ -10,7 +14,7 @@
               <dt class="text-lg leading-6 font-medium text-gray-900">
                 Is this book for Junior or Senior Software Engineers?
               </dt><dd class="mt-2">
-                <p class="text-base leading-6 text-gray-500">
+                <p class="text-base leading-6 text-gray-500 font-body">
                   Both! No matter how experienced you're there is always room
                   for improvement. This book can help you cultivate new habits
                   or rethink existing behaviors.
@@ -22,7 +26,7 @@
               <dt class="text-lg leading-6 font-medium text-gray-900">
                 Is there a refund policy?
               </dt><dd class="mt-2">
-                <p class="text-base leading-6 text-gray-500">
+                <p class="text-base leading-6 text-gray-500 font-body">
                   Yes, books from the Kindle Store are eligible for return
                   within 7 days of the date of purchase.
                 </p>
@@ -33,7 +37,7 @@
               <dt class="text-lg leading-6 font-medium text-gray-900">
                 Is there a paper version available?
               </dt><dd class="mt-2">
-                <p class="text-base leading-6 text-gray-500">
+                <p class="text-base leading-6 text-gray-500 font-body">
                   Yes! Now there's a fancy hardcover version made with creme
                   paper.
                 </p>
@@ -46,7 +50,7 @@
               <dt class="text-lg leading-6 font-medium text-gray-900">
                 What if I'm NOT a Software Engineer?
               </dt><dd class="mt-2">
-                <p class="text-base leading-6 text-gray-500">
+                <p class="text-base leading-6 text-gray-500 font-body">
                   I truly believe this book can help anyone working in the tech
                   industry. Even if you're a Project Manager, Designer, or
                   Student, you can still extract key lessons from this book.
@@ -58,7 +62,7 @@
               <dt class="text-lg leading-6 font-medium text-gray-900">
                 Can I share this book with my team?
               </dt><dd class="mt-2">
-                <p class="text-base leading-6 text-gray-500">
+                <p class="text-base leading-6 text-gray-500 font-body">
                   If you want to share the book with your team, company, or
                   class, please suggest them to purchase their own individual
                   copies.
@@ -70,8 +74,8 @@
               <dt class="text-lg leading-6 font-medium text-gray-900">
                 What if I have another question?
               </dt><dd class="mt-2">
-                <p class="text-base leading-6 text-gray-500">
-                  Send me an email at zeno@14habits.com
+                <p class="text-base leading-6 text-gray-500 font-body">
+                  Send me an email at {config.author.email}
                 </p>
               </dd>
             </div>
