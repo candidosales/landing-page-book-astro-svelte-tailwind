@@ -5,6 +5,8 @@ export interface Props {
 
 const { title } = Astro.props;
 import "@fontsource/pt-serif";
+
+import { seo } from "../config.json";
 ---
 
 <!DOCTYPE html>
@@ -14,7 +16,21 @@ import "@fontsource/pt-serif";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <link rel="canonical" href={seo.canonical} />
+    <meta name="description" content={seo.description} />
+    <meta property="og:url" content={seo.canonical} />
+    <meta property="og:title" content={seo.title} />
+    <meta property="og:description" content={seo.description} />
+    <meta
+      property="og:image"
+      content="https://www.geleiaturismo.com/og-image-01.jpg"
+    />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:site_name" content="SiteName" />
+    <title>{seo.title}</title>
   </head>
   <body>
     <slot />

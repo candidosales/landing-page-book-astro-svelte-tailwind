@@ -1,4 +1,9 @@
 {
+  "seo": {
+    "title": "Livro Chapada do Corisco por Alisson Carvalho",
+    "description": "Um remador solitário e a tragédia que maculou a história da vila de pescadores",
+    "canonical": "https://www.chapadadocorisco.book"
+  },
   "theme": {
     "color": "#b3b3b3"
   },
