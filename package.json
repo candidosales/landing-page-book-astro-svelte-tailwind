@@ -10,14 +10,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@fontsource/pt-serif": "^4.5.10",
+    "@fontsource/pt-serif": "^4.5.11",
     "@tailwindcss/ui": "^0.7.2",
-    "astro": "^1.1.6"
+    "astro": "^1.4.7"
   },
   "devDependencies": {
-    "@astrojs/svelte": "^1.0.0",
+    "@astrojs/svelte": "^1.0.1",
     "@astrojs/tailwind": "^1.0.0",
-    "sass": "^1.54.8",
-    "svelte": "^3.50.0"
+    "sass": "^1.55.0",
+    "svelte": "^3.51.0"
   }
 }

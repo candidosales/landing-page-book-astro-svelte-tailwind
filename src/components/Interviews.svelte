@@ -6,28 +6,13 @@
   const interviews = [
     {
       imageUrl: "/avatar-addy.jpeg",
-      name: "Addy Osmani",
+      name: "Auryo Jota",
       company: {
-        name: "Google",
-        url: "https://google.com",
+        name: "Escritor e Redator",
       },
       summary:
-        "Addy is an Engineering Manager working on Google Chrome. He leads up a developer tools team focused on measuring user-experiences to help keep the web fast. Some of his team's projects include Lighthouse, PageSpeed Insights and the Chrome User Experience Report.",
-      location: "Sunnyvale, United States",
-      githubUrl: "https://github.com/addyosmani",
-      twitterUrl: "https://twitter.com/addyosmani",
-      linkedinUrl: "https://linkedin.com/in/osmani",
-    },
-    {
-      imageUrl: "/avatar-berg.jpeg",
-      name: "Berg Brandt",
-      company: {
-        name: "Amazon",
-        url: "https://amazon.com",
-      },
-      summary:
-        "Berg Brandt is a Head of Studios Applications at Amazon. He is a product & technology leader with over 20 years of experience delivering highly-engaging technology products and user experiences. Before Amazon, Berg worked at Yahoo! for more than 8 years. ",
-      location: "Santa Monica, United States",
+        "Desde o título, a obra é carregada de referências. A região de Teresina, a capital do Piauí, também é conhecida como Chapada do Corisco devido às fortes trovoadas e constantes raios que caem durante as tempestades... A preocupação com questões sociais é um ponto central na obra. Desigualdade, preconceito, pessoas invisibilizadas (se ninguém vê, elas não existem, não incomodam), a normalização da violência sofrida por determinados corpos.",
+      location: "Teresina, Piauí",
       githubUrl: "https://github.com/addyosmani",
       twitterUrl: "https://twitter.com/addyosmani",
       linkedinUrl: "https://linkedin.com/in/osmani",
