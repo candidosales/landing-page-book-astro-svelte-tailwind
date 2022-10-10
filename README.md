@@ -14,3 +14,10 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`      | Preview your build locally, before deploying       |
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
 | `npm run astro --help` | Get help using the Astro CLI                       |
+
+## 🎨 Customization
+
+Update variable colours at:
+
+- `book-theme` in [tailwing.config.cjs](./tailwind.config.cjs);
+- `$book-theme-color` in [Layout.astro](./src/layouts/Layout.astro);

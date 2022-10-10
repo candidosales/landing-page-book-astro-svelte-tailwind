@@ -8,7 +8,7 @@ module.exports = {
       colors: {
         "book-yellow": "#fce62e",
         "book-gray": "#1a1a1c",
-        "book-theme": "#b3b3b3",
+        "book-theme": "#f59e0b",
       },
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
