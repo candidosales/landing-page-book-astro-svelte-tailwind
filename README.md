@@ -7,9 +7,9 @@ Inspired by: https://14habits.com/
 - ✅ [Tailwind](https://tailwindcss.com/)
 - ✅ [Astro](https://astro.build/)
 - ✅ [Astro/Sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/)
-- ✅ [Astro/Image](https://docs.astro.build/en/guides/integrations-guide/image/)
+- ✅ [Astro/Image] with AVIF format (https://docs.astro.build/en/guides/integrations-guide/image/)
 - ✅ [Svelte](https://svelte.dev/)
-- ✅ [Deploy at Vercel with Edge Functions](https://docs.astro.build/en/guides/integrations-guide/vercel/)
+- ✅ [Deploy at Vercel with Serverless](https://docs.astro.build/en/guides/integrations-guide/vercel/)
 - Partytown - Pending
 
 ## 🧞 Commands
