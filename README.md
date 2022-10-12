@@ -2,6 +2,16 @@
 
 Inspired by: https://14habits.com/
 
+## 🎯 Features
+
+- Tailwind
+- Astro
+- Svelte
+- Deploy at Vercel with Edge Functions
+- Sitemap - Pending
+- Image - Pending
+- Partytown - Pending
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
