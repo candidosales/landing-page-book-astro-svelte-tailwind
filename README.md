@@ -1,4 +1,4 @@
-# Landing Page Book - Astro + Svelte + Tailwind
+# Landing Page Book - Astro + Svelte + Tailwind + Vercel Edge
 
 Inspired by: https://14habits.com/
 
