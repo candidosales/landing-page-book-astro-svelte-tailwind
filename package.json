@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@astrojs/image": "^0.9.3",
+    "@astrojs/sitemap": "^1.0.0",
     "@astrojs/tailwind": "^2.0.2",
     "@fontsource/pt-serif": "^4.5.11",
     "astro": "^1.4.7",
