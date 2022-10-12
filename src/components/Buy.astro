@@ -1,3 +1,7 @@
+---
+import { book } from "../config.json";
+---
+
 <div class="bg-book-gray">
   <div class="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-20">
     <div class="text-center">
@@ -86,7 +90,7 @@
                   </ul><div class="mt-8">
                     <div class="rounded-lg shadow-md">
                       <a
-                        href="https://www.audible.com/pd/B08WJMLJWN/?source_code=AUDFPWS0223189MWT-BK-ACX0-237602&ref=acx_bty_BK_ACX0_237602_rh_us"
+                        href={book.buyAudiobookUrl}
                         class="block w-full text-center rounded-lg border border-transparent px-6 py-4 text-lg leading-6 font-semibold text-book-gray bg-book-theme hover:bg-yellow-200 focus:outline-none transition duration-300 ease-in-out"
                         >Compre no Audible</a
                       >
@@ -109,7 +113,7 @@
                 <div class="flex justify-center transform -translate-y-1/2">
                   <span
                     class="inline-flex rounded-full text-book-gray bg-book-theme px-4 py-1 text-sm font-semibold tracking-wider uppercase"
-                    >Most Popular</span
+                    >Mais Popular</span
                   >
                 </div>
               </div><div class="bg-white rounded-t-lg px-6 pt-12 pb-10">
@@ -192,7 +196,7 @@
                 </ul><div class="mt-10">
                   <div class="rounded-lg shadow-md">
                     <a
-                      href="https://www.arteimpressaeditora.com.br/product-page/chapada-do-corisco-alisson-carvalho"
+                      href={book.buyPhysicalUrl}
                       class="block w-full text-center rounded-lg border border-transparent px-6 py-4 text-xl leading-6 font-semibold text-book-gray bg-book-theme hover:bg-yellow-200 focus:outline-none transition duration-300 ease-in-out"
                       >Compre na Arte Impressa</a
                     >
@@ -267,7 +271,7 @@
                   </ul><div class="mt-8">
                     <div class="rounded-lg shadow-md">
                       <a
-                        href="https://www.amazon.com.br/Chapada-do-Corisco-Alisson-Carvalho-ebook/dp/B09WTD7RW9/"
+                        href={book.buyDigitalUrl}
                         class="block w-full text-center rounded-lg border border-transparent px-6 py-4 text-lg leading-6 font-semibold text-book-gray bg-book-theme hover:bg-yellow-200 focus:outline-none transition duration-300 ease-in-out"
                         >Compre na Amazon</a
                       >

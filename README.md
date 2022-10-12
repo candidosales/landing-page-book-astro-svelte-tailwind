@@ -4,12 +4,12 @@ Inspired by: https://14habits.com/
 
 ## 🎯 Features
 
-- Tailwind
-- Astro
-- Svelte
-- Deploy at Vercel with Edge Functions
-- Sitemap - Pending
-- Image - Pending
+- ✅ [Tailwind](https://tailwindcss.com/)
+- ✅ [Astro](https://astro.build/)
+- ✅ [Astro/Sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/)
+- ✅ [Astro/Image] with AVIF format (https://docs.astro.build/en/guides/integrations-guide/image/)
+- ✅ [Svelte](https://svelte.dev/)
+- ✅ [Deploy at Vercel with Serverless](https://docs.astro.build/en/guides/integrations-guide/vercel/)
 - Partytown - Pending
 
 ## 🧞 Commands
