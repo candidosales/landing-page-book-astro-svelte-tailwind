@@ -16,6 +16,9 @@
     "linkedinUrl": "https://www.linkedin.com/in/carvalho-854bb0131/"
   },
   "book": {
-    "buyUrl": ""
+    "title": "Chapada do Corisco",
+    "buyPhysicalUrl": "https://www.arteimpressaeditora.com.br/product-page/chapada-do-corisco-alisson-carvalho",
+    "buyDigitalUrl": "https://www.amazon.com.br/Chapada-do-Corisco-Alisson-Carvalho-ebook/dp/B09WTD7RW9/",
+    "buyAudiobookUrl": "https://www.audible.com/pd/B08WJMLJWN/?source_code=AUDFPWS0223189MWT-BK-ACX0-237602&ref=acx_bty_BK_ACX0_237602_rh_us"
   }
 }

@@ -1,3 +1,8 @@
+---
+import { Image } from "@astrojs/image/components";
+import { book } from "../config.json";
+---
+
 <main
   class="mx-auto max-w-screen-xl px-4 mb-8 mt-32 sm:mb-12 sm:px-6 md:mt-32 md:mb-20 xl:mt-23 xl:mb-24"
 >
@@ -69,9 +74,11 @@
     >
       <a class="book-container" href="#ebook"
         ><div class="book">
-          <img
-            src="/cover-2.jpeg"
-            alt="14 Habits of Highly Productive Developers"
+          <Image
+            src={"/cover-2.jpeg"}
+            aspectRatio="5:8"
+            width={300}
+            alt={book.title}
           />
         </div>
       </a>

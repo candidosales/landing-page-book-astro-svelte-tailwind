@@ -1,3 +1,9 @@
+---
+import { Image } from "@astrojs/image/components";
+
+import { book } from "../config.json";
+---
+
 <div class="bg-book-gray relative overflow-hidden">
   <div class="max-w-screen-xl mx-auto py-16 text-lg">
     <div class="hidden sm:block sm:absolute sm:inset-0">
@@ -46,10 +52,12 @@
             </li>
           </ol>
         </div><div class="sm:flex-1 px-4">
-          <img
+          <Image
             class="mt-16 rounded-md relative z-10"
-            src="/livro-dentro.jpeg"
-            alt="Kindle"
+            src={"/livro-dentro.jpeg"}
+            aspectRatio="3:4"
+            width={600}
+            alt={book.title}
           />
         </div>
       </div>
