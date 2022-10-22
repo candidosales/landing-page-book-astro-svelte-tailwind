@@ -12,16 +12,16 @@
   "dependencies": {
     "@astrojs/image": "^0.10.0",
     "@astrojs/sitemap": "^1.0.0",
-    "@astrojs/tailwind": "^2.1.0",
+    "@astrojs/tailwind": "^2.1.1",
     "@fontsource/pt-serif": "^4.5.11",
-    "astro": "^1.5.0",
+    "astro": "^1.5.2",
     "sharp": "^0.31.1",
-    "tailwindcss": "^3.1.8"
+    "tailwindcss": "^3.2.1"
   },
   "devDependencies": {
     "@astrojs/svelte": "^1.0.2",
-    "@astrojs/vercel": "^2.2.0",
+    "@astrojs/vercel": "^2.3.1",
     "sass": "^1.55.0",
-    "svelte": "^3.51.0"
+    "svelte": "^3.52.0"
   }
 }

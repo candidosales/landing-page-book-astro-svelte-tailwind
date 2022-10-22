@@ -41,7 +41,7 @@
 <div class="bg-white">
   <div class="max-w-screen-xl mx-auto pt-16 pb-4 px-4">
     <h2 class="text-3xl leading-9 font-extrabold text-gray-900">
-      Incluindo Entrevistas com...
+      Veja a opinião de quem já leu ...
     </h2>
     <div class="mt-6 pt-10">
       {#each interviews as { name, imageUrl, company, summary, location, twitterUrl, githubUrl, linkedinUrl, mediumUrl }}
