@@ -24,7 +24,7 @@ import { seo, author, book } from "../config.json";
     <meta property="og:title" content={seo.title} />
     <meta property="og:description" content={seo.description} />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content={seo.image} />
+    <meta property="og:image" content={seo.canonical + seo.image} />
     <meta property="og:image:width" content="800" />
     <meta property="og:image:height" content="600" />
     <meta property="og:site_name" content={seo.title} />

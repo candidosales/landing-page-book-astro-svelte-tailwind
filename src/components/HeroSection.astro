@@ -1,6 +1,6 @@
 ---
 import { Image } from "@astrojs/image/components";
-import { book } from "../config.json";
+import { showAmazonTag, book } from "../config.json";
 ---
 
 <main
@@ -8,14 +8,21 @@ import { book } from "../config.json";
 >
   <div class="lg:grid lg:grid-cols-12 lg:gap-8">
     <div class="md:max-w-1xl md:mx-auto lg:col-span-8">
-      <div class="text-base uppercase tracking-wide mb-4">
-        <img
-          class="inline h-5 relative"
-          style="top:3px"
-          src="/amazon.svg"
-          alt="amazon.com"
-        /> best-seller
-      </div><h1
+      {
+        showAmazonTag && (
+          <div class="text-base uppercase tracking-wide mb-4">
+            <img
+              class="inline h-5 relative"
+              style="top:3px"
+              src="/amazon.svg"
+              alt="amazon.com"
+            />{" "}
+            best-seller
+          </div>
+        )
+      }
+
+      <h1
         class="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl uppercase"
       >
         Chapada do<!-- -->&nbsp;<br class="hidden md:inline" /><span
