@@ -1,5 +1,5 @@
 ---
-import { book } from "../config.json";
+import { showCountingSell, book } from "../config.json";
 ---
 
 <div class="bg-book-gray">
@@ -92,8 +92,9 @@ import { book } from "../config.json";
                       <a
                         target="blank"
                         href={book.buyAudiobookUrl}
-                        class="block w-full text-center rounded-lg border border-transparent px-6 py-4 text-lg leading-6 font-semibold text-book-gray bg-book-theme hover:bg-yellow-200 focus:outline-none transition duration-300 ease-in-out"
-                        >Compre no Audible</a
+                        aria-disabled="true"
+                        class="block w-full text-center rounded-lg border border-transparent px-6 py-4 text-lg leading-6 font-semibold text-book-gray bg-slate-300 hover:bg-slate-500 focus:outline-none transition duration-300 ease-in-out"
+                        >Em gravação</a
                       >
                     </div>
                   </div>
@@ -285,11 +286,13 @@ import { book } from "../config.json";
             </div>
           </div>
         </div>
-      </div><p class="text-center text-base text-gray-700 mt-10">
+      </div>
+      {showCountingSell && <p class="text-center text-base text-gray-700 mt-10">
         Mais de<!-- -->
         <span class="font-semibold">2,425 <!-- -->cópias</span>
         <!-- -->vendidas
-      </p>
+      </p>}
+      
     </div>
   </div>
 </div>
