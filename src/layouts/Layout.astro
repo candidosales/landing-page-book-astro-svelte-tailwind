@@ -10,27 +10,42 @@ import { seo } from "../config.json";
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <link rel="canonical" href={seo.canonical} />
     <meta name="generator" content={Astro.generator} />
     <meta name="robots" content="index,follow" />
     <meta name="googlebot" content="index,follow" />
-    <link rel="canonical" href={seo.canonical} />
     <meta name="description" content={seo.description} />
     <meta property="og:url" content={seo.canonical} />
     <meta property="og:title" content={seo.title} />
     <meta property="og:description" content={seo.description} />
+    <meta property="og:type" content="website" />
     <meta
       property="og:image"
       content="https://www.geleiaturismo.com/og-image-01.jpg"
     />
     <meta property="og:image:width" content="800" />
     <meta property="og:image:height" content="600" />
-    <meta property="og:site_name" content="SiteName" />
+    <meta property="og:site_name" content={seo.title} />
+    <meta property="og:locale" content={seo.locale} />
     <title>{seo.title}</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FXFDTDRH4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-9FXFDTDRH4");
+    </script>
   </head>
   <body>
     <slot />
