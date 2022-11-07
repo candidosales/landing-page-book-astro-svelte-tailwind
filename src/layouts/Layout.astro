@@ -6,7 +6,7 @@ export interface Props {
 const { title } = Astro.props;
 import "@fontsource/pt-serif";
 
-import { seo } from "../config.json";
+import { seo, author, book } from "../config.json";
 ---
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@ import { seo } from "../config.json";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="canonical" href={seo.canonical} />
     <meta name="generator" content={Astro.generator} />
     <meta name="robots" content="index,follow" />
@@ -32,6 +32,20 @@ import { seo } from "../config.json";
     <meta property="og:image:height" content="600" />
     <meta property="og:site_name" content={seo.title} />
     <meta property="og:locale" content={seo.locale} />
+
+    <meta property="og:type" content="book" />
+    <meta property="book:author" content={author.name} />
+    <meta property="book:isbn" content={book.isbn} />
+    <meta property="book:release_date" content={book.releaseDate} />
+
+    <meta property="og:type" content="product" />
+    <meta property="product:price:amount" content={book.price} />
+    <meta property="product:price:currency" content={book.currency} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={seo.title} />
+    <meta name="twitter:description" content={seo.description} />
+
     <title>{seo.title}</title>
 
     <!-- Google tag (gtag.js) -->

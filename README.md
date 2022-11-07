@@ -31,3 +31,8 @@ Update variable colours at:
 
 - `book-theme` in [tailwing.config.cjs](./tailwind.config.cjs);
 - `$book-theme-color` in [Layout.astro](./src/layouts/Layout.astro);
+
+## 🔍 SEO
+
+- Rich Results Test: https://search.google.com/test/rich-results
+- https://developers.facebook.com/tools/debug/
