@@ -10,7 +10,7 @@ Inspired by: https://14habits.com/
 - ✅ [Astro/Image](https://docs.astro.build/en/guides/integrations-guide/image/) with AVIF format;
 - ✅ [Svelte](https://svelte.dev/);
 - ✅ [Deploy at Vercel with Serverless](https://docs.astro.build/en/guides/integrations-guide/vercel/);
-- Partytown - Pending
+- ✅ [Partytown + Google Analytics](https://partytown.builder.io/google-tag-manager)
 
 ## 🧞 Commands
 
