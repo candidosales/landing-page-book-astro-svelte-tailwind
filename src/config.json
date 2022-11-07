@@ -1,9 +1,11 @@
 {
+  "showAmazonTag": false,
   "seo": {
     "title": "Livro Chapada do Corisco por Alisson Carvalho",
     "description": "Um remador solitário e a tragédia que maculou a história da vila de pescadores",
     "canonical": "https://www.livrochapadadocorisco.com/",
-    "locale": "pt_BR"
+    "locale": "pt_BR",
+    "image": "/og_image_800_600.jpg"
   },
   "theme": {
     "color": "#f59e0b"
@@ -18,7 +20,7 @@
   },
   "book": {
     "title": "Chapada do Corisco",
-    "isbn": "",
+    "isbn": "978-65-89313-54-0",
     "releaseDate": "2022",
     "price": "34.9",
     "currency": "BRL",
