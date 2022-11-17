@@ -1,0 +1,26 @@
+<script lang="ts">
+  import Github from "./icons/Github.svelte";
+</script>
+
+<div
+  class="bg-book-gray text-gray-50 py-12 flex flex-col justify-center  items-center leading-4	"
+>
+  <p class="text-xl text-center mb-4">
+    Feito com<!-- -->
+    <span class="text-3xl text-pink-400 love">♥</span>
+    <!-- -->por<!-- -->
+    <a
+      class="text-book-theme border-b-2 border-transparent hover:border-book-yellow transition ease-in-out duration-300"
+      href="https://www.candidosales.me/"
+      target="blank">Cândido Sales</a
+    >
+  </p>
+  <p class="text-xl text-center">
+    <a
+      class=" flex flex-row items-center text-book-theme border-b-2 border-transparent hover:border-book-yellow transition ease-in-out duration-300"
+      href="https://github.com/candidosales/landing-page-book-astro-svelte-tailwind"
+      target="_blank"
+      ><Github color="text-gray-50" width="w-7" height="h-7" /> Projeto Open Source</a
+    >
+  </p>
+</div>
