@@ -5,7 +5,7 @@ Inspired by: https://14habits.com/
 ## 🎯 Features
 
 - ✅ [Tailwind](https://tailwindcss.com/);
-- ✅ [Astro](https://astro.build/);
+- ✅ [Astro 2v](https://astro.build/);
 - ✅ [Astro/Sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/);
 - ✅ [Astro/Image](https://docs.astro.build/en/guides/integrations-guide/image/) with AVIF format;
 - ✅ [Svelte](https://svelte.dev/);
