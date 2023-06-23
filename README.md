@@ -8,7 +8,7 @@ Inspired by: https://14habits.com/
 - ✅ [Astro 2v](https://astro.build/);
 - ✅ [Astro/Sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/);
 - ✅ [Astro/Image](https://docs.astro.build/en/guides/integrations-guide/image/) with AVIF format;
-- ✅ [Svelte](https://svelte.dev/);
+- ✅ [Svelte 4](https://svelte.dev/);
 - ✅ [Deploy at Vercel with Serverless](https://docs.astro.build/en/guides/integrations-guide/vercel/);
 - ✅ [Partytown + Google Analytics](https://partytown.builder.io/google-tag-manager)
 
