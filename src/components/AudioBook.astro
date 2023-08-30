@@ -1,5 +1,5 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 import { author } from "../config.json";
 ---
@@ -23,8 +23,8 @@ import { author } from "../config.json";
         <Image
           class="mb-4 rounded-md"
           src={"/audiobook.jpeg"}
-          aspectRatio="1:1"
           width={500}
+          height={500}
           alt={author.name}
           format={"avif"}
         />

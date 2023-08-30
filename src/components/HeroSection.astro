@@ -1,5 +1,5 @@
 ---
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import { showBuyAudiobookButton, showAmazonTag, book } from "../config.json";
 ---
 
@@ -89,8 +89,8 @@ import { showBuyAudiobookButton, showAmazonTag, book } from "../config.json";
         ><div class="book">
           <Image
             src={"/cover-2.jpeg"}
-            aspectRatio="5:8"
             width={300}
+            height={600}
             alt={book.title}
             format={"avif"}
           />
