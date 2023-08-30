@@ -12,7 +12,7 @@ Inspired by: https://14habits.com/
 - ✅ [Deploy at Vercel with Serverless](https://docs.astro.build/en/guides/integrations-guide/vercel/);
 - ✅ [Partytown + Google Analytics](https://partytown.builder.io/google-tag-manager)
 
-## 🧞 Commands
+## 🧞 Commands1
 
 All commands are run from the root of the project, from a terminal:
 
