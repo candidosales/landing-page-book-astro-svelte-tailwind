@@ -2,6 +2,7 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import svelte from "@astrojs/svelte";
 import sitemap from "@astrojs/sitemap";
+import vercel from "@astrojs/vercel/serverless";
 
 import partytown from "@astrojs/partytown";
 
@@ -9,4 +10,5 @@ import partytown from "@astrojs/partytown";
 export default defineConfig({
   integrations: [tailwind(), svelte(), sitemap(), partytown()],
   output: "server",
+  adapter: vercel(),
 });
