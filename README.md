@@ -5,14 +5,14 @@ Inspired by: https://14habits.com/
 ## 🎯 Features
 
 - ✅ [Tailwind](https://tailwindcss.com/);
-- ✅ [Astro 2v](https://astro.build/);
+- ✅ [Astro 3v](https://astro.build/);
 - ✅ [Astro/Sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/);
 - ✅ [Astro/Image](https://docs.astro.build/en/guides/integrations-guide/image/) with AVIF format;
 - ✅ [Svelte 4](https://svelte.dev/);
 - ✅ [Deploy at Vercel with Serverless](https://docs.astro.build/en/guides/integrations-guide/vercel/);
 - ✅ [Partytown + Google Analytics](https://partytown.builder.io/google-tag-manager)
 
-## 🧞 Commands
+## 🧞 Commands1
 
 All commands are run from the root of the project, from a terminal:
 
