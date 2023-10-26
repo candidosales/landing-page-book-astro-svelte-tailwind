@@ -2,6 +2,11 @@
   "showAmazonTag": false,
   "showCountingSell": false,
   "showBuyAudiobookButton": false,
+  "sections": {
+    "showBuyAudiobook": false,
+    "showDownloadFreeChapter": false,
+    "showAboutAuthor": true
+  },
   "seo": {
     "title": "Livro Chapada do Corisco por Alisson Carvalho",
     "description": "Um remador solitário e a tragédia que maculou a história da vila de pescadores",
@@ -29,5 +34,48 @@
     "buyPhysicalUrl": "https://www.arteimpressaeditora.com.br/product-page/chapada-do-corisco-alisson-carvalho",
     "buyDigitalUrl": "https://www.amazon.com.br/Chapada-do-Corisco-Alisson-Carvalho-ebook/dp/B09WTD7RW9/",
     "buyAudiobookUrl": "#"
+  },
+  "sectionPrices": {
+    "priceLeft": {
+      "title": "Audiobook",
+      "amount": {
+        "decimal": 14,
+        "cents": 95
+      },
+      "details": ["3+ Horas", "Formato MP3"],
+      "button": {
+        "label": "Em gravação",
+        "url": "#"
+      }
+    },
+    "priceMain": {
+      "title": "Livro físico",
+      "amount": {
+        "decimal": 34,
+        "cents": 90
+      },
+      "details": ["164 Páginas", "Capa fosca", "Papel creme"],
+      "button": {
+        "label": "Compre na Arte Impressa",
+        "url": "https://www.arteimpressaeditora.com.br/product-page/chapada-do-corisco-alisson-carvalho"
+      },
+      "tagTitle": {
+        "title": "Mais Popular",
+        "cssClass": "text-book-gray bg-book-theme"
+      }
+    },
+    "priceRight": {
+      "title": "E-book",
+      "amount": {
+        "decimal": 13,
+        "cents": 99
+      },
+      "previousAmount": "",
+      "details": ["164 Páginas", "Formato MOBI (Amazon)"],
+      "button": {
+        "label": "Compre na Amazon",
+        "url": "https://www.amazon.com.br/Chapada-do-Corisco-Alisson-Carvalho-ebook/dp/B09WTD7RW9/"
+      }
+    }
   }
 }

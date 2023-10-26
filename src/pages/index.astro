@@ -1,21 +1,23 @@
 ---
-import WhyReadThisBook from "../components/WhyReadThisBook.astro";
-import HeroSection from "../components/HeroSection.astro";
-import Layout from "../layouts/Layout.astro";
-import Interviews from "../components/Interviews.svelte";
-import FreeChapter from "../components/FreeChapter.astro";
-import WhatsInside from "../components/WhatsInside.astro";
-import Buy from "../components/Buy.astro";
-import Footer from "../components/Footer.svelte";
-import AudioBook from "../components/AudioBook.astro";
+import WhyReadThisBook from '../components/WhyReadThisBook.astro';
+import HeroSection from '../components/HeroSection.astro';
+import Layout from '../layouts/Layout.astro';
+import Interviews from '../components/Interviews.svelte';
+import FreeChapter from '../components/FreeChapter.astro';
+import WhatsInside from '../components/WhatsInside.astro';
+import Buy from '../components/Buy.astro';
+import Footer from '../components/Footer.svelte';
+import AudioBook from '../components/AudioBook.astro';
+import { sections } from '../config.json';
 ---
 
-<Layout title="Book Title">
+<Layout title='Book Title'>
+  s
   <HeroSection />
   <WhyReadThisBook />
-  <AudioBook />
+  {sections.showBuyAudiobook && <AudioBook />}
   <Interviews />
-  <FreeChapter />
+  {sections.showDownloadFreeChapter && <FreeChapter />}
   <WhatsInside />
   <Buy />
   <Footer />

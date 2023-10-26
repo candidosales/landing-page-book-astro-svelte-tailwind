@@ -1,5 +1,6 @@
 ---
-import { showCountingSell, book } from "../config.json";
+import { showCountingSell, book, sectionPrices } from "../config.json";
+import Checkmark from "./icons/Checkmark.svelte";
 ---
 
 <div class="bg-book-gray">
@@ -28,21 +29,21 @@ import { showCountingSell, book } from "../config.json";
             <div
               class="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-l-lg"
             >
-              <div class="flex-1 flex flex-col">
+			{sectionPrices.priceLeft && <div class="flex-1 flex flex-col">
                 <div class="bg-white px-6 py-10">
                   <div>
                     <h3
                       class="text-center text-2xl font-medium text-book-gray"
                       id="audiobook"
                     >
-                      Audiobook
+                      {sectionPrices.priceLeft.title}
                     </h3><div class="mt-4 flex items-center justify-center">
                       <span
                         class="px-1 flex items-start text-6xl tracking-tight text-book-gray"
-                        ><span class="font-extrabold">R$14</span>
+                        ><span class="font-extrabold">R${sectionPrices.priceLeft.amount.decimal}</span>
                       </span><span
                         class="text-2xl leading-8 font-medium text-gray-500"
-                        >,95</span
+                        >,{sectionPrices.priceLeft.amount.cents}</span
                       >
                     </div>
                   </div>
@@ -50,56 +51,27 @@ import { showCountingSell, book } from "../config.json";
                   class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10"
                 >
                   <ul class="space-y-4">
+					{sectionPrices.priceLeft.details.map((item) => (
                     <li class="flex items-start">
                       <div class="flex-shrink-0">
-                        <svg
-                          class="flex-shrink-0 h-6 w-6 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          aria-hidden="true"
-                          ><path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M5 13l4 4L19 7"></path>
-                        </svg>
+                        <Checkmark/>
                       </div><p class="ml-3 text-base font-medium text-gray-500">
-                        3+ Horas
+                        {item}
                       </p>
-                    </li><li class="flex items-start">
-                      <div class="flex-shrink-0">
-                        <svg
-                          class="flex-shrink-0 h-6 w-6 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          aria-hidden="true"
-                          ><path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M5 13l4 4L19 7"></path>
-                        </svg>
-                      </div><p class="ml-3 text-base font-medium text-gray-500">
-                        Formato MP3
-                      </p>
-                    </li>
+                    </li>))}
                   </ul><div class="mt-8">
                     <div class="rounded-lg shadow-md">
                       <a
                         target="blank"
-                        href={book.buyAudiobookUrl}
+                        href={sectionPrices.priceLeft.button.url}
                         aria-disabled="true"
                         class="block w-full text-center rounded-lg border border-transparent px-6 py-4 text-lg leading-6 font-semibold text-book-gray bg-slate-300 hover:bg-slate-500 focus:outline-none transition duration-300 ease-in-out"
-                        >Em gravação</a
+                        >{sectionPrices.priceLeft.button.label}</a
                       >
                     </div>
                   </div>
                 </div>
-              </div>
+              </div>}
             </div>
           </div><div
             class="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4"
@@ -124,13 +96,13 @@ import { showCountingSell, book } from "../config.json";
                     class="text-center text-3xl font-semibold text-book-gray sm:-mx-6"
                     id="ebook"
                   >
-                    Livro físico
+				  {sectionPrices.priceMain.title}
                   </h3><div class="mt-4 flex items-center justify-center">
                     <span
                       class="px-1 flex items-start text-6xl tracking-tight text-book-gray sm:text-6xl"
-                      ><span class="font-extrabold">R$34</span>
+                      ><span class="font-extrabold">R${sectionPrices.priceMain.amount.decimal}</span>
                     </span><span class="text-2xl font-medium text-gray-500"
-                      >,90</span
+                      >,{sectionPrices.priceLeft.amount.cents}</span
                     >
                   </div>
                 </div>
@@ -138,70 +110,21 @@ import { showCountingSell, book } from "../config.json";
                 class="border-t-2 border-gray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10"
               >
                 <ul class="space-y-4">
-                  <li class="flex items-start">
-                    <div class="flex-shrink-0">
-                      <svg
-                        class="flex-shrink-0 h-6 w-6 text-green-500"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                        ><path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div><p class="ml-3 text-base font-medium text-gray-500">
-                      164 Páginas
-                    </p>
-                  </li>
-                  <li class="flex items-start">
-                    <div class="flex-shrink-0">
-                      <svg
-                        class="flex-shrink-0 h-6 w-6 text-green-500"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                        ><path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div><p class="ml-3 text-base font-medium text-gray-500">
-                      Capa fosca
-                    </p>
-                  </li>
-                  <li class="flex items-start">
-                    <div class="flex-shrink-0">
-                      <svg
-                        class="flex-shrink-0 h-6 w-6 text-green-500"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                        ><path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div><p class="ml-3 text-base font-medium text-gray-500">
-                      Papel creme
-                    </p>
-                  </li>
+					{sectionPrices.priceMain.details.map((item) => (
+                    <li class="flex items-start">
+                      <div class="flex-shrink-0">
+                        <Checkmark/>
+                      </div><p class="ml-3 text-base font-medium text-gray-500">
+                        {item}
+                      </p>
+                    </li>))}
                 </ul><div class="mt-10">
                   <div class="rounded-lg shadow-md">
                     <a
                       target="blank"
-                      href={book.buyPhysicalUrl}
+                      href={sectionPrices.priceMain.button.url}
                       class="block w-full text-center rounded-lg border border-transparent px-6 py-4 text-xl leading-6 font-semibold text-book-gray bg-book-theme hover:bg-yellow-200 focus:outline-none transition duration-300 ease-in-out"
-                      >Compre na Arte Impressa</a
+                      >{sectionPrices.priceMain.button.label}</a
                     >
                   </div>
                 </div>
@@ -213,88 +136,57 @@ import { showCountingSell, book } from "../config.json";
             <div
               class="flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-r-lg"
             >
-              <div class="flex-1 flex flex-col relative">
-                <!-- 
-                  Black friday
-                  <div class="absolute inset-x-0 top-5 transform translate-y-px" >
+             {sectionPrices.priceRight && <div class="flex-1 flex flex-col relative">
+				<!--<div class="absolute inset-x-0 top-5 transform translate-y-px" >
                   <div class="flex justify-center transform -translate-y-1/2">
                     <span class="inline-flex rounded-full text-white bg-black px-4 py-1 text-sm font-semibold tracking-wider uppercase">Black Friday</span>
                   </div>
-                </div> -->
+                </div>-->
                 <div class="bg-white px-6 py-10">
                   <div>
                     <h3
                       class="text-center text-2xl font-medium text-book-gray"
                       id="hardcover"
                     >
-                      E-book
+					{sectionPrices.priceRight.title}
                     </h3>
                     <div class="mt-4 flex items-center justify-center">
                       <span class="px-1 flex items-start text-6xl tracking-tight text-book-gray">
-                        <span class="font-extrabold">R$13</span>
+                        <span class="font-extrabold">R${sectionPrices.priceRight.amount.decimal}</span>
                       </span>
-                      <span class="text-xl font-medium text-gray-500">,99</span>
+                      <span class="text-xl font-medium text-gray-500">,{sectionPrices.priceRight.amount.cents}</span>
 
                     </div>
-                    <!-- 
-                      Old price
-                      <div class="flex items-center justify-center">
-                      <span class="line-through font-light text-gray-500">R$19.99</span>
-                    </div> -->
+                    
+                      {sectionPrices.priceRight.previousAmount &&  <div class="flex items-center justify-center">
+                      <span class="line-through font-light text-gray-500">{sectionPrices.priceRight.previousAmount}</span>
+                    </div>}
+                      
                   </div>
                 </div><div
                   class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10"
                 >
                   <ul class="space-y-4">
+                    {sectionPrices.priceRight.details.map((item) => (
                     <li class="flex items-start">
                       <div class="flex-shrink-0">
-                        <svg
-                          class="flex-shrink-0 h-6 w-6 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          aria-hidden="true"
-                          ><path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M5 13l4 4L19 7"></path>
-                        </svg>
+                        <Checkmark/>
                       </div><p class="ml-3 text-base font-medium text-gray-500">
-                        164 Páginas
+                        {item}
                       </p>
-                    </li><li class="flex items-start">
-                      <div class="flex-shrink-0">
-                        <svg
-                          class="flex-shrink-0 h-6 w-6 text-green-500"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          aria-hidden="true"
-                          ><path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M5 13l4 4L19 7"></path>
-                        </svg>
-                      </div><p class="ml-3 text-base font-medium text-gray-500">
-                        Formato MOBI (Amazon)
-                      </p>
-                    </li>
+                    </li>))}
                   </ul><div class="mt-8">
                     <div class="rounded-lg shadow-md">
                       <a
                         target="blank"
-                        href={book.buyDigitalUrl}
+                        href={sectionPrices.priceRight.button.url}
                         class="block w-full text-center rounded-lg border border-transparent px-6 py-4 text-lg leading-6 font-semibold text-book-gray bg-book-theme hover:bg-yellow-200 focus:outline-none transition duration-300 ease-in-out"
-                        >Compre na Amazon</a
+                        >{sectionPrices.priceRight.button.label}</a
                       >
                     </div>
                   </div>
                 </div>
-              </div>
+              </div>}
             </div>
           </div>
         </div>
