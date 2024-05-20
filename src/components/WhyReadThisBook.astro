@@ -43,11 +43,13 @@ import { author } from '../config.json';
         </p><p class='text-sm italic text-gray-500'>
           {author.location}
         </p><div class='flex flex-row my-2'>
-          <a href={author.instagramUrl} target='_blank'><Instagram /></a>
-          <a href={author.twitterUrl} target='_blank'><Twitter /></a><a
-            href={author.linkedinUrl}
-            target='_blank'
+          <a title='Instagram link' href={author.instagramUrl} target='_blank'
+            ><Instagram /></a
           >
+          <a title='Twitter link' href={author.twitterUrl} target='_blank'
+            ><Twitter /></a
+          >
+          <a title='LinkedIn link' href={author.linkedinUrl} target='_blank'>
             <Linkedin />
           </a>
         </div>
