@@ -1,82 +1,83 @@
 ---
-import { Image } from "astro:assets";
+import { Image } from 'astro:assets';
 
-import { book } from "../config.json";
+import { book } from '../config.json';
 ---
 
-<div class="bg-book-gray relative overflow-hidden">
-  <div class="max-w-screen-xl mx-auto pt-16 pb-8 text-lg">
-    <div class="hidden sm:block sm:absolute sm:inset-0">
+<div class='bg-book-gray relative overflow-hidden'>
+  <div class='max-w-screen-xl mx-auto pt-16 pb-8 text-lg'>
+    <div class='hidden sm:block sm:absolute sm:inset-0'>
       <svg
-        class="absolute bottom-0 right-0 transform translate-x-1/2 mb-48 text-gray-700 lg:top-0 lg:mt-28 lg:mb-0 xl:transform-none xl:translate-x-0"
-        width="364"
-        height="384"
-        viewBox="0 0 364 384"
-        fill="none"
+        class='absolute bottom-0 right-0 transform translate-x-1/2 mb-48 text-gray-700 lg:top-0 lg:mt-28 lg:mb-0 xl:transform-none xl:translate-x-0'
+        width='364'
+        height='384'
+        viewBox='0 0 364 384'
+        fill='none'
         ><defs
           ><pattern
-            id="eab71dd9-9d7a-47bd-8044-256344ee00d0"
-            x="0"
-            y="0"
-            width="20"
-            height="20"
-            patternUnits="userSpaceOnUse"
-            ><rect x="0" y="0" width="4" height="4" fill="currentColor"></rect>
+            id='eab71dd9-9d7a-47bd-8044-256344ee00d0'
+            x='0'
+            y='0'
+            width='20'
+            height='20'
+            patternUnits='userSpaceOnUse'
+            ><rect x='0' y='0' width='4' height='4' fill='currentColor'></rect>
           </pattern>
         </defs><rect
-          width="364"
-          height="384"
-          fill="url(#eab71dd9-9d7a-47bd-8044-256344ee00d0)"></rect>
+          width='364'
+          height='384'
+          fill='url(#eab71dd9-9d7a-47bd-8044-256344ee00d0)'></rect>
       </svg>
-    </div><div class="relative z-10">
-      <h2 class="text-5xl mb-10 font-semibold text-gray-50 px-4">
+    </div><div class='relative z-10'>
+      <h2 class='text-5xl mb-10 font-semibold text-gray-50 px-4'>
         O que tem<!-- -->
-        <span class="text-book-theme pl-4">dentro?</span>
-      </h2><div class="flex-none sm:flex">
-        <div class="text-base sm:flex-1 px-4">
-          <ol class="text-gray-400 ml-4 mb-4 font-body">
-            <li class="text-lg mb-2 text-gray-100 font-semibold">Prólogo</li>
-            <li class="text-lg mb-2 text-gray-100 font-semibold">
+        <span class='text-book-theme pl-4'>dentro?</span>
+      </h2><div class='flex-none sm:flex'>
+        <div class='text-base sm:flex-1 px-4'>
+          <ol class='text-gray-400 ml-4 mb-4 font-body'>
+            <li class='text-lg mb-2 text-gray-100 font-semibold'>Prólogo</li>
+            <li class='text-lg mb-2 text-gray-100 font-semibold'>
               Uma melodia no poente
             </li>
-            <li class="text-lg mb-2 text-gray-100 font-semibold">
+            <li class='text-lg mb-2 text-gray-100 font-semibold'>
               A primeira pétala
             </li>
-            <li class="text-lg mb-2 text-gray-100 font-semibold">
+            <li class='text-lg mb-2 text-gray-100 font-semibold'>
               Os natimortos
             </li>
-            <li class="text-lg mb-2 text-gray-100 font-semibold">
+            <li class='text-lg mb-2 text-gray-100 font-semibold'>
               O grande nadador
             </li>
-            <li class="text-lg mb-2 text-gray-100 font-semibold">
+            <li class='text-lg mb-2 text-gray-100 font-semibold'>
               O gato Maracajá
             </li>
-            <li class="text-lg mb-2 text-gray-100 font-semibold">
+            <li class='text-lg mb-2 text-gray-100 font-semibold'>
               O canto proibido
             </li>
-            <li class="text-lg mb-2 text-gray-100 font-semibold">O viajante</li>
-            <li class="text-lg mb-2 text-gray-100 font-semibold">
+            <li class='text-lg mb-2 text-gray-100 font-semibold'>O viajante</li>
+            <li class='text-lg mb-2 text-gray-100 font-semibold'>
               Uma voz que se vai
             </li>
-            <li class="text-lg mb-2 text-gray-100 font-semibold">
+            <li class='text-lg mb-2 text-gray-100 font-semibold'>
               Uma voz que fica
             </li>
-            <li class="text-lg mb-2 text-gray-100 font-semibold">O recomeço</li>
-            <li class="text-lg mb-2 text-gray-100 font-semibold">
+            <li class='text-lg mb-2 text-gray-100 font-semibold'>O recomeço</li>
+            <li class='text-lg mb-2 text-gray-100 font-semibold'>
               O lamento de Maria
             </li>
-            <li class="text-lg mb-2 text-gray-100 font-semibold">
+            <li class='text-lg mb-2 text-gray-100 font-semibold'>
               A primeira flor do Aguapé
             </li>
           </ol>
-        </div><div class="sm:flex-1 px-4">
+        </div><div class='sm:flex-1 px-4'>
           <Image
-            class="rounded-md relative z-10"
-            src={"/livro-dentro.jpeg"}
+            class='rounded-md relative z-10'
+            src={'/livro-dentro.jpeg'}
             width={400}
             height={500}
             alt={book.title}
-            format={"avif"}
+            format={'avif'}
+            loading={'eager'}
           />
         </div>
       </div>

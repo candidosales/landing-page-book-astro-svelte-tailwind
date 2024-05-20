@@ -1,35 +1,38 @@
 ---
-import { Image } from "astro:assets";
-import { showBuyAudiobookButton, showAmazonTag, book } from "../config.json";
+import { Image } from 'astro:assets';
+import { showBuyAudiobookButton, showAmazonTag, book } from '../config.json';
 ---
 
 <main
-  class="mx-auto max-w-screen-xl px-4 mb-8 mt-12 sm:mt-12 sm:mb-12 sm:px-6 md:mt-32 md:mb-20 xl:mt-23 xl:mb-24"
+  class='mx-auto max-w-screen-xl px-4 mb-8 mt-12 sm:mt-12 sm:mb-12 sm:px-6 md:mt-32 md:mb-20 xl:mt-23 xl:mb-24'
 >
-  <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-    <div class="mb-12 md:max-w-1xl md:mx-auto lg:col-span-8">
+  <div class='lg:grid lg:grid-cols-12 lg:gap-8'>
+    <div class='mb-12 md:max-w-1xl md:mx-auto lg:col-span-8'>
       {
         showAmazonTag && (
-          <div class="text-base uppercase tracking-wide mb-4">
-            <img
-              class="inline h-5 relative"
-              style="top:3px"
-              src="/amazon.svg"
-              alt="amazon.com"
-            />{" "}
+          <div class='text-base uppercase tracking-wide mb-4'>
+            <Image
+              class='inline h-5 relative'
+              style='top:3px'
+              src='/amazon.svg'
+              alt='amazon.com'
+              width={300}
+              height={480}
+              loading={'eager'}
+            />{' '}
             best-seller
           </div>
         )
       }
 
       <h1
-        class="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl uppercase"
+        class='mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl uppercase'
       >
-        Chapada do<!-- -->&nbsp;<br class="hidden md:inline" /><span
-          class="underline">Corisco</span
+        Chapada do<!-- -->&nbsp;<br class='hidden md:inline' /><span
+          class='underline'>Corisco</span
         >
       </h1><p
-        class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl font-body"
+        class='mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl font-body'
       >
         O livro faz uma releitura das crenças que povoam o imaginário dos
         ribeirinhos, moradores da Vila Velha do Poti. Local que pincela o
@@ -37,7 +40,7 @@ import { showBuyAudiobookButton, showAmazonTag, book } from "../config.json";
         elite política que adotou um projeto higienista causando a apartação de
         classes sociais divergentes.
       </p><p
-        class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl font-body"
+        class='mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl font-body'
       >
         O isolamento geográfico entre a Vila Velha e a Vila Nova é exposto nas
         entrelinhas dos causos e lendas. Além disso, os mitos repassados de
@@ -45,54 +48,55 @@ import { showBuyAudiobookButton, showAmazonTag, book } from "../config.json";
         sobre a violência vivenciada pelos moradores.
       </p>
       <p
-        class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl font-body"
+        class='mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl font-body'
       >
         "Chapada do Corisco" é costura um romance proibido que surpreenderá o
         leitor, a história retoma o problema da maldição que maculou uma Vila
         tingindo as águas calmas do Poti com o sangue sagrado.
       </p>
       <div>
-        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+        <div class='mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start'>
           <div>
             <a
-              href="https://www.arteimpressaeditora.com.br/product-page/chapada-do-corisco-alisson-carvalho"
-              target="_blank"
-              class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 rounded-md font-semibold text-black bg-book-theme hover:bg-yellow-200 focus:outline-none transition duration-300 ease-in-out md:py-4 md:text-lg md:px-10"
+              href='https://www.arteimpressaeditora.com.br/product-page/chapada-do-corisco-alisson-carvalho'
+              target='_blank'
+              class='w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 rounded-md font-semibold text-black bg-book-theme hover:bg-yellow-200 focus:outline-none transition duration-300 ease-in-out md:py-4 md:text-lg md:px-10'
               >Compre o Livro</a
             >
           </div>
           {
             showBuyAudiobookButton && (
-              <div class="mt-3 sm:mt-0 sm:ml-3">
+              <div class='mt-3 sm:mt-0 sm:ml-3'>
                 <a
-                  href="#audiobook"
-                  class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 rounded-md font-semibold text-white bg-book-gray hover:bg-gray-800 focus:outline-none transition duration-300 ease-in-out md:py-4 md:text-lg md:px-10"
+                  href='#audiobook'
+                  class='w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 rounded-md font-semibold text-white bg-book-gray hover:bg-gray-800 focus:outline-none transition duration-300 ease-in-out md:py-4 md:text-lg md:px-10'
                 >
                   Compre o Audiobook
                 </a>
               </div>
             )
           }
-        </div><p class="mt-3 text-sm text-book-gray sm:mt-5 sm:text-base">
+        </div><p class='mt-3 text-sm text-book-gray sm:mt-5 sm:text-base'>
           Ou <a
-            download=""
-            href="/static/(Sample)-14-Habits-of-Highly-Productive-Developers.pdf"
-            class="underline hover:bg-book-yellow transition ease-in-out duration-300"
+            download=''
+            href='/static/(Sample)-14-Habits-of-Highly-Productive-Developers.pdf'
+            class='underline hover:bg-book-yellow transition ease-in-out duration-300'
             >baixe o primeiro capítulo</a
           > de graça.
         </p>
       </div>
     </div><div
-      class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-4 lg:flex lg:items-center"
+      class='mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-4 lg:flex lg:items-center'
     >
-      <a class="book-container" href="#ebook"
-        ><div class="book">
+      <a class='book-container' href='#ebook'
+        ><div class='book'>
           <Image
-            src={"/cover-2.jpeg"}
+            src={'/cover-2.jpeg'}
             width={300}
             height={600}
             alt={book.title}
-            format={"avif"}
+            format={'avif'}
+            loading={'eager'}
           />
         </div>
       </a>
