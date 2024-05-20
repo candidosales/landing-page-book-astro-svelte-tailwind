@@ -1,4 +1,4 @@
-# Landing Page Book - Astro + Svelte + Tailwind + Vercel Edge
+# Landing Page Book - Astro + Tailwind + Vercel Edge
 
 Inspired by: https://14habits.com/
 
@@ -7,7 +7,6 @@ Inspired by: https://14habits.com/
 - ✅ [Tailwind](https://tailwindcss.com/);
 - ✅ [Astro 4v](https://astro.build/);
 - ✅ [Astro/Sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/);
-- ✅ [Svelte 4](https://svelte.dev/);
 - ✅ [Deploy at Vercel with Serverless](https://docs.astro.build/en/guides/integrations-guide/vercel/);
 - ✅ [Partytown + Google Analytics](https://partytown.builder.io/google-tag-manager)
 
