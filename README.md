@@ -5,7 +5,7 @@ Inspired by: https://14habits.com/
 ## 🎯 Features
 
 - ✅ [Tailwind](https://tailwindcss.com/);
-- ✅ [Astro 4v](https://astro.build/);
+- ✅ [Astro 5v](https://astro.build/);
 - ✅ [Astro/Sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/);
 - ✅ [Deploy at Vercel with Serverless](https://docs.astro.build/en/guides/integrations-guide/vercel/);
 - ✅ [Partytown + Google Analytics](https://partytown.builder.io/google-tag-manager)
