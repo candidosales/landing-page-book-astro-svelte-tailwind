@@ -4,7 +4,7 @@ Inspired by: https://14habits.com/
 
 ## 🎯 Features
 
-- ✅ [Tailwind](https://tailwindcss.com/);
+- ✅ [Tailwind 4](https://tailwindcss.com/);
 - ✅ [Astro 5v](https://astro.build/);
 - ✅ [Astro/Sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/);
 - ✅ [Deploy at Vercel with Serverless](https://docs.astro.build/en/guides/integrations-guide/vercel/);
