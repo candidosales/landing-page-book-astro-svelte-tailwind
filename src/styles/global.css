@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+	--font-sans: "Inter var";
+	--font-body: "PT Serif", serif;
+	--color-book-yellow: #fce62e;
+	--color-book-gray: #1a1a1c;
+	--color-book-theme: #f59e0b;
+}

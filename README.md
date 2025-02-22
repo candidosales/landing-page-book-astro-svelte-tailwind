@@ -4,7 +4,7 @@ Inspired by: https://14habits.com/
 
 ## 🎯 Features
 
-- ✅ [Tailwind](https://tailwindcss.com/);
+- ✅ [Tailwind 4](https://tailwindcss.com/);
 - ✅ [Astro 5v](https://astro.build/);
 - ✅ [Astro/Sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/);
 - ✅ [Deploy at Vercel with Serverless](https://docs.astro.build/en/guides/integrations-guide/vercel/);
@@ -28,8 +28,7 @@ All commands are run from the root of the project, from a terminal:
 
 Update variable colours at:
 
-- `book-theme` in [tailwing.config.cjs](./tailwind.config.cjs);
-- `$book-theme-color` in [Layout.astro](./src/layouts/Layout.astro);
+- `@theme` in [global.css](./src/styles/global.css);
 
 ## 🔍 SEO
 
