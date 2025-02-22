@@ -28,8 +28,7 @@ All commands are run from the root of the project, from a terminal:
 
 Update variable colours at:
 
-- `book-theme` in [tailwing.config.cjs](./tailwind.config.cjs);
-- `$book-theme-color` in [Layout.astro](./src/layouts/Layout.astro);
+- `@theme` in [global.css](./src/styles/global.css);
 
 ## 🔍 SEO
 
